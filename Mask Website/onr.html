@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Masks by Mrs F</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $(".buttonA").click(function() {
+				
+                $("#initiallyhiddentable").toggle(); 
+                
+            });
+            
+        }); 
+    </script>   
+    
+    <style>
+        table{
+            padding-top: 10px;
+        }
+        th, td{
+            border: black solid 1px;
+        }
+        button{
+            font-family: 'Asul', sans-serif;
+        }
+        #onrForm{
+            width:20%;
+            border: solid black 1px;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        main{
+            padding-left: 25px;
+        }
+        @media only screen and (max-width: 768px) {
+            #onrForm{
+            width:65%;
+            border: solid black 1px;
+            padding: 3px;
+            margin-bottom: 5px;
+           }
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+        <header>
+            <h1><a href="index.html">Masks by Mrs F</a></h1>
+        </header>
+        <nav id="nav">
+            <a href="home.html" class="navspacing">Home</a>
+            
+            <a href="onr.html">Orders &amp; Returns</a>
+            
+            <a href="about.html" class="navspacing">About</a>
+            
+            <a href="shop.html" class="navspacing" id="shopit">Shop</a>
+        </nav>
+</div>
+    <div id="wrapper">
+        <main>
+            <h1>Shipping Information</h1>
+            <p>All items are shipped out the same day of purchase if they are ordered within the following hours: 8AM-4PM ET. Otherwise, they are shipped the next morning.</p>
+            <button class="buttonA">Click here for more information</button>
+            <span id="initiallyhiddentable">
+                <p>
+                    Shipping cost is included in with your purchase amount. Your shipping will be two day shipping that includes with a tracking number emailed to you. All purchases will be shipped same day if purchased Monday-Saturday between 8AM-4PM. If your item is purchased after 4PM Saturday, it will be shipped out on Monday morning. 
+                </p>
+            </span>
+            <h1>Return Policy</h1>
+            <p>
+                Due to sanitary reasons, all sales are final.
+            </p>
+            <h2>Still have questions?</h2>
+            <p>Contact us directly at +1 216-785-3318 if located in the US or masksbymrsf@gmail.com if you are internationally located. <br> Alternatively, fill out this form to be contacted by us:</p>
+            <form id="onrForm" action="mailto: masksbymrsf@gmail.com" method="post" enctype="text/plain">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Name:</label> <input type="text" placeholder="John Smith" name="name" required> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Email:</label> <input type="email" placeholder="email@gmail.com" name="email" required> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Phone:</label> <input type="tel" placeholder="(###) ###-####" name="Phone" required> <br>
+            <label>Question(s):</label> <input type="text" id="largerBox" name="Questions" required> <br>
+            </form>
+        </main>
+        <footer>
+            <div>
+            Connect: <a href="https://www.facebook.com/tiedyedutopia/">Instagram</a>
+            </div>
+            <div id="footerContact">
+            Contact us!: Phone: <a href="3477514089">+1 347-751-4089</a>, Email: <a href="tiedyedutopia@gmail.com">tiedyedutopia@gmail.com</a>
+            </div>
+            <div>
+            Copyright &copy; 2020
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
